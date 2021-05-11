@@ -228,6 +228,9 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.layout .main-content .courses-card .courses-infor .course .name-course{
+    width: 160px;
+}
 .layout .main-content .courses-card .courses-infor .course .name-course .header-line {
     font-family: Baloo Bhai;
     font-style: normal;
