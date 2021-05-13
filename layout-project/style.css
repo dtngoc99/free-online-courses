@@ -4,1252 +4,573 @@ li {
     margin: 0;
     padding: 0;
 }
+.mg-right-10{
+    margin-right: 10px;
+}
 body {
     display: flex;
     justify-content: center;
     margin: 0;
 }
-/*Smart phone nhỏ*/
-@media screen and (min-width: 240px) {
-    main {
-        width: 95%;
-        height: auto;
-    }
-    .layout {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: 10% 90%;
-    }
-    .layout .content .rectangle {
-        width: auto;
-        height: 500px;
-        background: #000000;
-        border-radius: 24px;
-        position: relative;
-    }
-    .layout .content .icon-menu {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .layout .content .icon-menu img {
-        width: 100%;
-        margin: auto;
-    }
-    .layout .content .icon-menu .first-icon {
-        margin-top: 40px;
-        width: 20px;
-        height: auto;
-    }
-    .layout .content .icon-menu .icon {
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .layout .content .icon-menu .icon img {
-        width: 16px;
-        height: 16px;
-    }
-    .layout .content .icon-menu .last-icon {
-        text-align: center;
-    }
-    .layout .content .icon-menu .last-icon img {
-        width: 20px;
-        height: 20px;
-        margin-top: 100px;
-    }
-    /* =========================================================== */
-    .layout .main-content {
-        margin-left: 10px;
-    }
-    .layout .main-content .container {
-        width: 100%;
-    }
-    .layout .main-content .hello-card {
-        width: 100%;
-        height: auto;
-    }
-    .layout .main-content .hello-card .rectangle {
-        width: 100%;
-        height: 100px;
-        border-radius: 14px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    .layout .main-content .hello-card .rectangle .content-card {
-        margin-left: 20px;
-        width: 40%;
-    }
-    .layout .main-content .hello-card .rectangle .content-card .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-    }
-    .layout .main-content .hello-card .rectangle .content-card .content {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-    }
-    .layout .main-content .hello-card .rectangle .image-card {
-        position: absolute;
-        bottom: 0;
-        right: 10px;
-        width: 100;
-        height: auto;
-    }
-    .layout .main-content .hello-card .rectangle .image-card img{
-        width: 100px;
-        height: auto;
-    }
-    .layout .main-content .spanish-card {
-        /* display: flex;
-        justify-content: space-between; */
-        margin-top: 30px;
-        width: 100%;
-        position: relative;
-    }
-    .layout .main-content .spanish-card .rectangle {
-        width: 100%;
-        height: 50px;
-        background: #f5f5f7;
-        border-radius: 14px;
-    }
-    .layout .main-content .spanish-card .rectangle .country {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-
-    .layout .main-content .spanish-card .action-card button {
-        padding: 0;
-        border: none;
-        background: none;
-    }
-    .layout .main-content .spanish-card .action-card button:active {
-        background: red;
-        border-radius: 20px;
-    }
-    .layout .main-content .spanish-card .rectangle .country .image-card {
-        /* width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative; */
-    }
-    .layout .main-content .spanish-card .rectangle .country .image-card img {
-        width: 20px;
-        height: 20px;
-        margin: auto;
-    }
-    .layout .main-content .spanish-card .rectangle .country .name-card .name {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
-        color: #000000;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .name-card .quote {
-        font-family: Roboto;
-        font-size: 8px;
-        line-height: 15px;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle {
-        width: 20px;
-        height: 20px;
-        border: 2px solid #000000;
-        border-radius: 50%;
-        position: relative;
-    }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle span {
-        font-size: 8px;
-        font-family: Roboto;
-        line-height: 15px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .btn button {
-        width: auto;
-        height: 25px;
-        background: #000000;
-        border-radius: 8px;
-        color: #ffffff;
-        font-size: 8px;
-    }
-    .layout .main-content .spanish-card .action-card {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: absolute;
-        top: -20px;
-        right: 0
-    }
-    .layout .main-content .spanish-card .action-card img{
-        width: 20px;
-        height: 20px;
-    }
-    .layout .main-content .spanish-card .action-card .get-back {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-    }
-    .layout .main-content .spanish-card .action-card .get-next {
-        width: 20px;
-        height: 20px;
-    }
-    .layout .main-content .courses-card{
-        width: 100%;
-    }
-    .layout .main-content .courses-card .header-line {
-        font-size: 14px;
-        line-height: 18px;
-        font-family: Baloo Bhai;
-    }
-    .layout .main-content .courses-card .menu-card nav ul {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 8px;
-        font-family: Baloo Bhai;
-    }
-    .layout .main-content .courses-card .menu-card nav ul li {
-        margin-right: 10px;
-    }
-    .layout .main-content .courses-card .courses-infor {
-        margin-top: 10px;
-        width: 100%;
-    }
-    .layout .main-content .courses-card .courses-infor .course {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        /* width: 100%; */
-        height: 50px;
-        background: #f5f5f7;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .image-card {
-        /* width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative; */
-    }
-    .layout .main-content .courses-card .courses-infor .course .image-card img {
-        width: 20px;
-        height: 20px;
-        margin: auto;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course {
-        width: auto;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 8px;
-        color: #000000;
-        margin: 0;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course .quote {
-        font-family: Roboto;
-        font-size: 6px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .time-card img {
-        width: 10px;
-        height: 10px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .time-card span {
-        font-size:8px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .rating img {
-        width: 10px;
-        height: 10px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .rating span{
-        font-size: 8px;
-    }
-    .btn button{
-        width: 40px;
-        padding: 0;
-        margin: 0;
-    }
-    /* ============================================================== */
-    .layout .content .container {
-        margin-top: 60px;
-        width: 100%;
-        height: auto;
-    }
-    .layout .content .head-info {
-        display: flex;
-        justify-content: space-between;
-        height: 30px;
-        width: auto;
-    }
-    .layout .content .head-info .head-search {
-        position: relative;
-        height: 30px;
-    }
-    .layout .content .head-info .head-search .search-icon i{
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        transform: translateY(-50%);
-    }
-    .layout .content .head-info .head-search input {
-        width: 300px;
-        height: 30px;
-        color: #f5f5f7;
-        border-radius: 4px;
-        margin-right: 10px;
-        padding-left: 30px;
-        color: #000000;
-    }
-    .layout .content .head-info .info-card {
-        display: flex;
-        justify-content: space-between;
-    }
-    .layout .content .head-info .info-card .notifi img{
-        width: 20px;
-        height: 30px;
-        margin-right: 10px;
-    }
-    .layout .content .head-info .info-card .profile img{
-        width: 30px;
-        height: 30px;
-    }
-    .layout .content .courses-card {
-        
-        margin-top: 10px;
-    }
-    .layout .content .courses-card .course-infor {
-        width: 100%;
-        height: 50px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .layout .content .courses-card .course-infor .content {
-        display: flex;
-        justify-content: center;
-        width: 138px;
-        height: 100%;
-        align-items: center;
-    }
-    .layout .content .courses-card .course-infor .number-courses {
-        font-size: 20px;
-        font-family: Baloo Bhai;
-        margin: 0;
-    }
-    .layout .content .courses-card .course-infor .status-course {
-        font-size: 14px;
-        text-align: center;
-    }
-    .layout .content .statis-card .heading {
-        font-size: 20px;
-        font-family: Baloo Bhai;
-    }
-    .layout .content .statis-card .infor-card .content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .layout .content .statis-card .infor-card .content .detail {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .layout .content .statis-card .infor-card .content ul {
-        font-size: 13px;
-    }
-    .layout .content .statis-card .infor-card .image-card {
-        width: 100%;
-        height: auto;
-        margin-top: 15px;
-    }
-    .layout .content .statis-card .infor-card .image-card img{
-        width: 100%;
-    }
-    .layout .content .lern-more {
-        width: 100%;
-    }
-    .layout .content .lern-more .rectangle {
-        margin-top: 20px;
-        height: auto;
-        background: #f5f5f7;
-        border-radius: 14px;
-        flex-direction: column;
-        padding: 0;
-    }
-    .layout .content .lern-more .rectangle .content {
-        padding: 10px;
-    }
-    .layout .content .lern-more .rectangle .content .header-line {
-        font-size: 24px;
-        font-family: Baloo Bhai;
-    }
-    .layout .content .lern-more .rectangle .image-card {
-        width: 100%;
-        height: 150px;
-        position: relative;
-        background: #f5f5f7;
-        padding-bottom: 20px;
-    }
-    .layout .content .lern-more .rectangle .image-card img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-    .mg-right-20 {
-        margin-right: 20px;
-    }
-    .opacity-03 {
-        opacity: 0.3;
-    }
-    .layout .content .lern-more .rectangle .content .quote {
-        font-size: 16px;
-        font-family: Roboto;
-    }
+img{
+    width: 100%;
+    height: auto;
 }
+.rectangle {
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+.btn {
+    background: #000000;
+    border-radius: 14px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+}
+.header-line {
+    font-size: 24px;
+    line-height: 38px;
+    font-family: Baloo Bhai;
+}
+.quote {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 15px;
+}
+main {
+    width: 100%;
+    height: auto;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 40px 30px 30px 30px;
+}
+
+.menu .rectangle {
+    width: auto;
+    background: #000000;
+    border-radius: 24px;
+    position: relative;
+}
+.icon-menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.first-icon {
+    margin-top: 40px;
+    width: 47px;
+    height: 102px;
+}
+.icon {
+    width: 100%;
+    text-align: center;
+    margin-top: 64.3px;
+}
+.icon img {
+    width: 26px;
+    height: 26px;
+}
+.last-icon {
+    text-align: center;
+}
+.last-icon img {
+    width: 26.1px;
+    height: 26.1px;
+    margin-top: 170px;
+}
+.icon-menu img {
+    margin: auto;
+}
+.main-content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-left: 0 !important;
+}
+.main-component {
+    width: 100%;
+}
+
+/* =========================================================== */
+
+.hello-card {
+    width: 100%;
+    height: 191px;
+}
+.hello-card .rectangle {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.hello-card .rectangle .content-card {
+    margin: 10px;
+}
+.hello-card .image-card {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 175px;
+    height: 191px;
+}
+.hello-card .image-card img {
+    width: 100%;
+    height: auto;
+}
+.spanish-card {
+    display: flex;
+    justify-content: space-between;
+}
+.spanish-card .country {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.spanish-card .name {
+    font-family: Baloo Bhai;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    margin: 0;
+}
+.spanish-card .quote {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+}
+.spanish-card .circle {
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: relative;
+}
+.spanish-card .circle span {
+    font-family: Roboto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spanish-card .action-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+}
+.spanish-card .image-card {
+    border-radius: 12px;
+    background: #ffffff;
+    position: relative;
+}
+.image-card img {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.action-card button img {
+    width: 40px;
+    height: 40px;
+}
+.action-card button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+.action-card button:active {
+    background: red;
+    border-radius: 20px;
+}
+.action-card .get-back {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.action-card .get-next {
+    width: 40px;
+    height: 40px;
+}
+
+.courses-card .menu-card ul {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Baloo Bhai;
+}
+.menu-card li {
+    margin-right: 10px;
+}
+.courses-infor {
+    margin-top: 10px;
+    width: 100%;
+}
+.courses-infor .course {
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f7;
+    align-items: center;
+    padding: 10px;
+}
+.course .image-card {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    background: #ffffff;
+    position: relative;
+}
+.course.image-card img {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ====================================================================== */
+.head-info {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+.head-search {
+    position: relative;
+    width: 100%;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+input {
+    border-radius: 4px;
+    margin: 0;
+    color: #000000;
+    padding-left: 10px;
+}
+.info-card {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+.notifi {
+    width: 100%;
+    margin-right: 10px;
+}
+.profile {
+    width: 100%;
+}
+.courses-card {
+    width: 100%;
+    flex-direction: column;
+}
+.course-infor {
+    width: 100%;
+    background: #f5f5f7;
+    display: flex;
+    justify-content: center;
+}
+.course-infor .content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.number-courses {
+    font-family: Baloo Bhai;
+    margin: 0;
+}
+.status-course {
+    text-align: center;
+}
+.infor-card .content {
+    display: flex;
+    justify-content: space-between;
+}
+.infor-card .detail {
+    display: flex;
+    justify-content: flex-start;
+}
+.statis-image img {
+    width: 100%;
+    height: auto;
+}
+.lern-more {
+    width: 100%;
+    height: auto;
+}
+.lern-more .rectangle {
+    flex-direction: column;
+    background: #f5f5f7;
+}
+.lern-more .image-card {
+    position: relative;
+    /* background: #f5f5f7; */
+}
+.lern-more .image-card img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mg-right-20 {
+    margin-right: 20px;
+}
+.opacity-03 {
+    opacity: 0.3;
+}
+.quote{
+    color: #000000;
+}
+
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px) {
-    main {
-        width: 85%;
-        height: auto;
-    }
-    main .layout {
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin-top: 40px;
-    }
-    .layout .content .rectangle {
-        width: auto;
+    .menu .rectangle {
         height: 853.12px;
-        background: #000000;
-        border-radius: 24px;
-        position: relative;
     }
-    .layout .content .icon-menu {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .layout .content .icon-menu img {
-        margin: auto;
-    }
-    .layout .content .icon-menu .first-icon {
+    .content .icon-menu .first-icon {
         margin-top: 40px;
         width: 47px;
         height: 102px;
     }
-    .layout .content .icon-menu .icon {
+    .content .icon-menu .icon {
         width: 100%;
         text-align: center;
         margin-top: 64.3px;
     }
-    .layout .content .icon-menu .icon img {
+    .content .icon-menu .icon img {
         width: 26px;
         height: 26px;
     }
-    .layout .content .icon-menu .last-icon {
+    .content .icon-menu .last-icon {
         text-align: center;
     }
-    .layout .content .icon-menu .last-icon img {
+    .content .icon-menu .last-icon img {
         width: 26.1px;
         height: 26.1px;
         margin-top: 170px;
     }
     /* =========================================================== */
-    .layout .main-content {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 60% 40%;
+    .main-component{
+        width: auto;
+        margin: 0 30px;
     }
-    .layout .main-content .container {
-        width: 95%;
-    }
-    .layout .main-content .hello-card {
-        width: 100%;
-        height: 191px;
-    }
-    .layout .main-content .hello-card .rectangle {
-        width: 100%;
-        height: 160px;
-        border-radius: 14px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    .layout .main-content .hello-card .rectangle .content-card {
-        margin: 10px;
-    }
-    .layout .main-content .hello-card .rectangle .content-card .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
+    .hello-card .header-line{
         font-size: 20px;
-        line-height: 57px;
-        margin: 0;
     }
-    .layout .main-content .hello-card .rectangle .content-card .content {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0;
-    }
-    .layout .main-content .hello-card .rectangle .image-card {
-        position: absolute;
-        bottom: 0;
-        right: 30px;
-        width: 175px;
-        height: 191px;
-    }
-    .layout .main-content .hello-card .rectangle .image-card img{
-        width: 100%;
-        height: auto;
-    }
-    .layout .main-content .spanish-card {
-        display: flex;
-        justify-content: space-between;
-    }
-    .layout .main-content .spanish-card .rectangle {
+    .spanish-card .rectangle {
         width: 100%;
         height: 80px;
-        background: #f5f5f7;
-        border-radius: 14px;
     }
-    .layout .main-content .spanish-card .rectangle .country {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .layout .main-content .spanish-card .rectangle .country .image-card {
+    .spanish-card .image-card{
         width: 64px;
         height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative;
     }
-    .layout .main-content .spanish-card .rectangle .country .image-card img {
+    .image-card img {
         width: 32px;
         height: 32px;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
-    .layout .main-content .spanish-card .rectangle .country .name-card .name {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 26px;
-        color: #000000;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .name-card .quote {
-        font-family: Roboto;
-        font-size: 12px;
-        line-height: 15px;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle {
+    .percent-card .circle {
         width: 25px;
         height: 25px;
-        border: 2px solid #000000;
-        border-radius: 50%;
-        position: relative;
     }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle span {
+    .percent-card .circle span {
         font-size: 13px;
-        font-family: Roboto;
-        line-height: 15px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
-    .btn button {
-        width: auto;
-        height: 30px !important;
-        background: #000000;
-        border-radius: 8px;
-        color: #ffffff;
-        font-size: 10px;
-    }
-    .layout .main-content .spanish-card .action-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 5px;
-    }
-    .layout .main-content .spanish-card .action-card button {
-        padding: 0;
-        border: none;
-        background: none;
-    }
-    .layout .main-content .spanish-card .action-card button img{
+    .action-card button img {
         width: 30px;
         height: 30px;
     }
-    .layout .main-content .spanish-card .action-card button:active {
-        background: red;
-    }
-    .layout .main-content .spanish-card .action-card .get-back {
+
+    .action-card .get-back {
         width: 30px;
         height: 30px;
     }
-    .layout .main-content .spanish-card .action-card .get-next {
+    .action-card .get-next {
         width: 30px;
         height: 30px;
     }
-    .layout .main-content .courses-card .header-line {
+    .header-line {
         font-size: 24px;
         line-height: 38px;
-        font-family: Baloo Bhai;
     }
-    .layout .main-content .courses-card .menu-card nav ul {
-        display: flex;
-        justify-content: flex-start;
+    .courses-card .menu-card ul {
         font-size: 13px;
-        font-family: Baloo Bhai;
     }
-    .layout .main-content .courses-card .menu-card nav ul li {
+    .menu-card li {
         margin-right: 10px;
     }
-    .layout .main-content .courses-card .courses-infor {
+    .courses-infor .course {
         margin-top: 10px;
-        width: 100%;
-    }
-    .layout .main-content .courses-card .courses-infor .course {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        width: 98%;
         height: 80px;
-        background: #f5f5f7;
-        align-items: center;
     }
-    .layout .main-content .courses-card .courses-infor .course .image-card {
-        width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative;
-    }
-    .layout .main-content .courses-card .courses-infor .course .image-card img {
-        width: 32px;
-        height: 32px;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course {
-        width: auto;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
+
+    .header-line {
         font-size: 14px;
         line-height: 26px;
-        color: #000000;
-        margin: 0;
     }
-    .layout .main-content .courses-card .courses-infor .course .name-course .quote {
-        font-family: Roboto;
+    .quote {
         font-size: 12px;
         line-height: 15px;
     }
-    .layout .main-content .courses-card .courses-infor .course .time-card img {
+    .time-card img {
         width: 16px;
         height: 16px;
     }
-    .layout .main-content .courses-card .courses-infor .course .time-card span {
-        font-size: 1px;
+    .time-card span {
+        font-size: 12px;
     }
-    .layout .main-content .courses-card .courses-infor .course .rating {
+    .rating {
         font-size: 13px;
     }
-    .layout .main-content .courses-card .courses-infor .course .rating img {
+    .rating img {
         width: 16px;
         height: 16px;
     }
-    .btn button {
-        width: auto;
-        height: 40px;
-        background: #000000;
+    .btn {
         border-radius: 8px;
         color: #ffffff;
+        font-size: 12px;
     }
     /* ============================================================== */
-    .layout .content {
-        width: 95%;
+    .head-info {
+        height: 30px;
     }
-    .layout .content .container {
-        width: 100%;
-        height: auto;
-        margin-top: 0;
+     .head-search {
+        height: 30px;
     }
-    .layout .content .head-info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+    .search-icon {
+        left: 3px;
     }
-    .layout .content .head-info .head-search {
-        position: relative;
-        width: 100%;
-    }
-    .layout .content .head-info .head-search .search-icon {
-        position: absolute;
-        top: 14px;
-        left: 10px;
-    }
-    .layout .content .head-info .head-search input {
-        width: 95%;
-        height: 40px;
-        color: #f5f5f7;
+    input {
+        width: 80%;
+        height: 30px;
         border-radius: 4px;
-        margin-right: 10px;
     }
-    .layout .content .head-info .info-card {
-        display: flex;
-        justify-content: space-between;
+    .notifi {
         width: auto;
-    }
-    .layout .content .head-info .info-card .notifi {
-        width: 100%;
         height: 36px;
         margin-right: 10px;
     }
-    .layout .content .head-info .info-card .profile {
-        width: 100%;
+    .profile {
+        width: auto;
         height: 40px;
     }
-    .layout .content .courses-card {
+    .courses-card {
         margin-top: 10px;
         width: 100%;
-        flex-direction: column;
     }
-    .layout .content .courses-card .course-infor {
+    .course-infor {
         width: 100%;
         height: 96px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: center;
         margin-top: 10px;
     }
-    .layout .content .courses-card .course-infor .content {
-        display: flex;
-        justify-content: center;
+    .course-infor .content {
         width: 60%;
         height: 100%;
-        align-items: center;
     }
-    .layout .content .courses-card .course-infor .number-courses {
+    .number-courses {
         font-size: 64px;
-        font-family: Baloo Bhai;
         margin: 0;
     }
-    .layout .content .courses-card .course-infor .status-course {
+    .status-course {
         font-size: 16px;
-        text-align: center;
     }
-    .layout .content .statis-card .heading {
+    .heading {
         font-size: 24px;
-        font-family: Baloo Bhai;
     }
-    .layout .content .statis-card .infor-card .content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .layout .content .statis-card .infor-card .content .detail {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .layout .content .statis-card .infor-card .content ul {
+    .infor-card ul {
         font-size: 14px;
     }
-    .layout .content .statis-card .infor-card .image-card {
-        width: 100%;
-        height: auto;
+    .statis-image{
         margin-top: 15px;
     }
-    .layout .content .statis-card .infor-card .image-card img {
+    .lern-more {
         width: 100%;
     }
-    .layout .content .lern-more {
-        width: 100%;
-    }
-    .layout .content .lern-more .rectangle {
-        margin-top: 20px;
+    .lern-more .rectangle {
         height: auto;
-        background: #f5f5f7;
-        border-radius: 14px;
-        flex-direction: column;
+        margin-top: 20px;
         padding: 0;
     }
-    .layout .content .lern-more .rectangle .content {
+    .lern-more .content {
         padding: 10px;
     }
-    .layout .content .lern-more .rectangle .content .header-line {
+    .lern-more .header-line {
         font-size: 24px;
-        font-family: Baloo Bhai;
     }
-    .layout .content .lern-more .rectangle .image-card {
+    .lern-more .image-card {
         width: 100%;
         height: 150px;
-        position: relative;
-        background: #f5f5f7;
         padding-bottom: 20px;
-    }
-    .layout .content .lern-more .rectangle .image-card img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-    .mg-right-20 {
-        margin-right: 20px;
-    }
-    .opacity-03 {
-        opacity: 0.3;
-    }
-    .layout .content .lern-more .rectangle .content .quote {
-        font-size: 16px;
-        font-family: Roboto;
     }
 }
 /*Ipad ngang(1024 x 768)*/
 @media screen and (min-width: 1024px) {
-    main {
-        width: 85%;
-        height: auto;
+    .header-line{
+        font-size: 18px;
     }
-    main .layout {
-        display: grid;
-        grid-template-columns: 10% 90%;
-        margin-top: 40px;
+    .quote{
+        font-size: 14px;
     }
-    .layout .content .rectangle {
-        width: auto;
-        height: 853.12px;
-        background: #000000;
-        border-radius: 24px;
-        position: relative;
+    .main-component{
+        margin: 0 40px;
     }
-    .layout .content .icon-menu {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .layout .content .icon-menu img {
-        margin: auto;
-    }
-    .layout .content .icon-menu .first-icon {
-        margin-top: 40px;
-        width: 47px;
-        height: 102px;
-    }
-    .layout .content .icon-menu .icon {
-        width: 100%;
-        text-align: center;
-        margin-top: 64.3px;
-    }
-    .layout .content .icon-menu .icon img {
-        width: 26px;
-        height: 26px;
-    }
-    .layout .content .icon-menu .last-icon {
-        text-align: center;
-    }
-    .layout .content .icon-menu .last-icon img {
-        width: 26.1px;
-        height: 26.1px;
-        margin-top: 170px;
-    }
-    /* =========================================================== */
-    .layout .main-content {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 60% 40%;
-    }
-    .layout .main-content .container {
-        width: 95%;
-    }
-    .layout .main-content .hello-card {
-        width: 100%;
-        height: 191px;
-    }
-    .layout .main-content .hello-card .rectangle {
-        width: 100%;
-        height: 160px;
-        border-radius: 14px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    .layout .main-content .hello-card .rectangle .content-card {
-        margin: auto 0;
-        margin-left: 40px;
-    }
-    .layout .main-content .hello-card .rectangle .content-card .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
+    .hello-card .header-line{
         font-size: 36px;
-        line-height: 57px;
     }
-    .layout .main-content .hello-card .rectangle .content-card .content {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+    .hello-card .quote{
+        font-size: 20px;
     }
-    .layout .main-content .hello-card .rectangle .image-card {
-        position: absolute;
-        bottom: 0;
-        right: 30px;
-        width: 175px;
-        height: 191px;
+    .name-course{
+        width: 200px;
     }
-    .layout .main-content .spanish-card {
+    .content .lern-more {
+        width: 100%;
+    }
+    input{
+        width: 90%;
+    }
+    .content.courses-card{
         display: flex;
         justify-content: space-between;
+        flex-direction: initial;
     }
-    .layout .main-content .spanish-card .rectangle {
-        width: 100%;
-        height: 80px;
-        background: #f5f5f7;
-        border-radius: 14px;
-    }
-    .layout .main-content .spanish-card .rectangle .country {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .layout .main-content .spanish-card .rectangle .country .image-card {
-        width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative;
-    }
-    .layout .main-content .spanish-card .rectangle .country .image-card img {
-        width: 32px;
-        height: 32px;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .layout .main-content .spanish-card .rectangle .country .name-card .name {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        color: #000000;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .name-card .quote {
-        font-family: Roboto;
-        font-size: 13px;
-        line-height: 15px;
-        margin: 0;
-    }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle {
-        width: 40px;
-        height: 40px;
-        border: 2px solid #000000;
-        border-radius: 50%;
-        position: relative;
-    }
-    .layout .main-content .spanish-card .rectangle .country .percent-card .circle span {
-        font-size: 13px;
-        font-family: Roboto;
-        line-height: 15px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .btn button {
-        width: 120px;
-        height: 40px;
-        background: #000000;
-        border-radius: 8px;
-        color: #ffffff;
-    }
-    .layout .main-content .spanish-card .action-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 10px;
-    }
-    .layout .main-content .spanish-card .action-card button img{
-        width: 40px;
-        height: 40px;
-    }
-    .layout .main-content .spanish-card .action-card button {
-        padding: 0;
-        border: none;
-        background: none;
-    }
-    .layout .main-content .spanish-card .action-card button:active {
-        background: red;
-        border-radius: 20px;
-    }
-    .layout .main-content .spanish-card .action-card .get-back {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-    }
-    .layout .main-content .spanish-card .action-card .get-next {
-        width: 40px;
-        height: 40px;
-    }
-    .layout .main-content .courses-card .header-line {
-        font-size: 24px;
-        line-height: 38px;
-        font-family: Baloo Bhai;
-    }
-    .layout .main-content .courses-card .menu-card nav ul {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 16px;
-        font-family: Baloo Bhai;
-    }
-    .layout .main-content .courses-card .menu-card nav ul li {
-        margin-right: 10px;
-    }
-    .layout .main-content .courses-card .courses-infor {
-        margin-top: 10px;
-        width: 100%;
-    }
-    .layout .main-content .courses-card .courses-infor .course {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        width: 98%;
-        height: 80px;
-        background: #f5f5f7;
-        align-items: center;
-    }
-    .layout .main-content .courses-card .courses-infor .course .image-card {
-        width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        background: #ffffff;
-        position: relative;
-    }
-    .layout .main-content .courses-card .courses-infor .course .image-card img {
-        width: 32px;
-        height: 32px;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course {
-        width: 160px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course .header-line {
-        font-family: Baloo Bhai;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        color: #000000;
-        margin: 0;
-    }
-    .layout .main-content .courses-card .courses-infor .course .name-course .quote {
-        font-family: Roboto;
-        font-size: 13px;
-        line-height: 15px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .time-card img {
-        width: 16px;
-        height: 16px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .time-card span {
-        font-size: 13px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .rating {
-        font-size: 13px;
-    }
-    .layout .main-content .courses-card .courses-infor .course .rating img {
-        width: 16px;
-        height: 16px;
-    }
-    .btn button {
-        width: auto;
-        height: 40px;
-        background: #000000;
-        border-radius: 8px;
-        color: #ffffff;
-    }
-    /* ============================================================== */
-    .layout .content {
-        width: 95%;
-    }
-    .layout .content .container {
-        width: 100%;
-        height: auto;
-        margin-top: 0;
-    }
-    .layout .content .head-info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .layout .content .head-info .head-search {
-        position: relative;
-        width: 100%;
-    }
-    .layout .content .head-info .head-search .search-icon {
-        position: absolute;
-        top: 14px;
-        left: 10px;
-    }
-    .layout .content .head-info .head-search input {
-        width: 95%;
-        height: 40px;
-        color: #f5f5f7;
-        border-radius: 4px;
-        margin-right: 10px;
-    }
-    .layout .content .head-info .info-card {
-        display: flex;
-        justify-content: space-between;
-        width: auto;
-    }
-    .layout .content .head-info .info-card .notifi {
-        width: 100%;
-        height: 36px;
-        margin-right: 10px;
-    }
-    .layout .content .head-info .info-card .profile {
-        width: 100%;
-        height: 40px;
-    }
-    .layout .content .courses-card {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        margin-top: 10px;
-        width: 100%;
-    }
-    .layout .content .courses-card .course-infor {
-        margin-right: 10px;
-        height: 96px;
-        background: #f5f5f7;
-        display: flex;
-        justify-content: center;
-    }
-    .layout .content .courses-card .course-infor .content {
-        display: flex;
-        justify-content: center;
-        width: 60%;
-        height: 100%;
-        align-items: center;
-    }
-    .layout .content .courses-card .course-infor .number-courses {
-        font-size: 64px;
-        font-family: Baloo Bhai;
-        margin: 0;
-    }
-    .layout .content .courses-card .course-infor .status-course {
-        font-size: 16px;
-        text-align: center;
-    }
-    .layout .content .statis-card .heading {
-        font-size: 24px;
-        font-family: Baloo Bhai;
-    }
-    .layout .content .statis-card .infor-card .content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .layout .content .statis-card .infor-card .content .detail {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .layout .content .statis-card .infor-card .content ul {
-        font-size: 16px;
-    }
-    .layout .content .statis-card .infor-card .image-card {
-        width: 100%;
-        height: auto;
-        margin-top: 15px;
-    }
-    .layout .content .statis-card .infor-card .image-card img {
-        width: 100%;
-    }
-    .layout .content .lern-more {
-        width: 100%;
-    }
-    .layout .content .lern-more .rectangle {
+    .lern-more .rectangle {
         margin-top: 40px;
         width: 100% !important;
         height: auto;
-        background: #f5f5f7;
-        border-radius: 14px;
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 0;
     }
-    .layout .content .lern-more .rectangle .content {
+    .lern-more .content {
         width: 100%;
         padding: 10px;
     }
-    .layout .content .lern-more .rectangle .content .header-line {
+    .lern-more .content .header-line {
         font-size: 24px;
         font-family: Baloo Bhai;
     }
-    .layout .content .lern-more .rectangle .image-card {
+    .lern-more .image-card {
         width: 100%;
         position: relative;
     }
-    .layout .content .lern-more .rectangle .image-card img {
+    .lern-more .image-card img {
         width: auto;
         position: absolute;
         top: 50%;
@@ -1262,7 +583,7 @@ body {
     .opacity-03 {
         opacity: 0.3;
     }
-    .layout .content .lern-more .rectangle .content .quote {
+    .lern-more .content .quote {
         font-size: 16px;
         font-family: Roboto;
     }
